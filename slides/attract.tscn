@@ -1,27 +1,65 @@
-[gd_scene load_steps=3 format=3 uid="uid://c14hvxmunl5yf"]
+[gd_scene load_steps=11 format=3 uid="uid://c14hvxmunl5yf"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_q4goy"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_cqrtb"]
+[ext_resource type="Texture2D" uid="uid://chp6j6dgjnumt" path="res://slides/attractbackground1.png" id="2_ecey2"]
 [ext_resource type="FontFile" uid="uid://df8l81qo7spv4" path="res://fonts/Staccato 555 BT.ttf" id="2_eonv8"]
+[ext_resource type="VideoStream" path="res://videos/goldorakgogenerique.ogv" id="3_ch04v"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_hm487"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_0oh0q"]
+[ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="5_mpws7"]
+[ext_resource type="Texture2D" uid="uid://5fy3ho4jrbxe" path="res://slides/attractlogogrendizer.png" id="7_g2qp7"]
+[ext_resource type="Texture2D" uid="uid://dsu5b1682lyci" path="res://slides/attract_antenne2_logo.png" id="8_ljq48"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_q4goy")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1605.0
-offset_bottom = 490.0
-color = Color(0.415686, 0.627451, 1, 1)
+[node name="attractbackground1" type="Sprite2D" parent="."]
+position = Vector2(800, 250)
+texture = ExtResource("2_ecey2")
 
-[node name="Label" type="Label" parent="ColorRect"]
-layout_mode = 0
-offset_right = 1605.0
-offset_bottom = 490.0
-theme_override_colors/font_color = Color(0.67451, 0.254902, 0, 1)
+[node name="MPFCarousel" type="Node2D" parent="."]
+scale = Vector2(0.4, 0.4)
+script = ExtResource("2_cqrtb")
+carousel_name = "attract"
+
+[node name="credits" type="Label" parent="MPFCarousel"]
+offset_left = 2705.0
+offset_top = 625.0
+offset_right = 3182.0
+offset_bottom = 814.0
 theme_override_fonts/font = ExtResource("2_eonv8")
-theme_override_font_sizes/font_size = 100
-text = "Bienvenue dans le flipper
-GOLDORAK GO"
+theme_override_font_sizes/font_size = 120
+text = "sample text"
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("3_hm487")
+variable_type = 2
+variable_name = "credits_string"
+
+[node name="logogrendizer" type="Sprite2D" parent="MPFCarousel"]
+position = Vector2(3662.5, 110)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("7_g2qp7")
+
+[node name="mpf_logo" type="Sprite2D" parent="MPFCarousel"]
+position = Vector2(402.5, 112.5)
+texture = ExtResource("5_mpws7")
+
+[node name="logoantenne2" type="Sprite2D" parent="MPFCarousel"]
+position = Vector2(3830, 1062.5)
+texture = ExtResource("8_ljq48")
+
+[node name="video generique" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 96.0
+offset_right = 648.0
+offset_bottom = 464.0
+stream = ExtResource("3_ch04v")
+autoplay = true
+loop = true
+bus = &"music"
+script = ExtResource("4_0oh0q")

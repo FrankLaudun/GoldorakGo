@@ -18,16 +18,16 @@ modes:
 #  - base
 #  - ball_save
 #  - skill_shot
-#  - vega_saucers
+#  - vega_saucers # mission bumpers comme les jets sur AFM et RFM
 
 playfields:
   playfield:
-    tags: default
     default_source_device: bd_trough
+    tags: default
 
 spinners:
   spinny:
-    switch: s_catapult_spinner
+    switch: s_catapult_spinner # spinner sortie couloir de gauche
     idle_ms: 1000
     max_events_per_second: 3
 

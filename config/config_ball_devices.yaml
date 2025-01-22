@@ -1,10 +1,9 @@
 #config_version=6
 
-
 ball_devices:
   bd_plunger: # lanceur
     ball_switches: s_plunger_lane
-#    mechanical_eject: true
+    mechanical_eject: true
     entrance_count_delay: 300ms
     eject_timeouts: 3s
     eject_coil: c_plunger_eject

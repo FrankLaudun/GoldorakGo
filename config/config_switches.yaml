@@ -1,25 +1,27 @@
 #config_version=6
 
 switches:
+  # bouton façade flipper
   s_flipper_left: # flipper gauche
     number: 1-0-32
     tags: left_flipper
   s_flipper_right: # flipper droit
     number: 1-0-33
     tags: right_flipper
-  s_trough1: # magasin billes 1
-    number: 1-0-34
-  s_trough2: # magasin billes 2
-    number: 1-0-35
-  s_trough3: # magasin billes 3
-    number: 1-0-36
-  s_trough4: # magasin billes 4
-    number: 1-0-37
   s_plunger:  # lanceur
-    number: 1-0-38
+    number: 1-0-34
   s_start_button: # démarrer
-    number: 1-0-39
+    number: 1-0-35
     tags: start
+  # magasin de billes
+  s_trough1: # magasin billes 1
+    number: 1-0-36
+  s_trough2: # magasin billes 2
+    number: 1-0-37
+  s_trough3: # magasin billes 3
+    number: 1-0-38
+  s_trough4: # magasin billes 4
+    number: 1-0-39
   s_plunger_lane: # présence bille couloir lanceur
     number: 1-0-40
   s_left_slingshot: # slingshot gauche
