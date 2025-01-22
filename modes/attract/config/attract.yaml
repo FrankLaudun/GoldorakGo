@@ -5,3 +5,8 @@
 
 slide_player:
   mode_attract_started: attract
+
+sound_player: # musique avec la vidéo sur godot
+  mode_attract_started:
+    goldorak_generique:
+      bus: music
