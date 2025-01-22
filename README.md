@@ -1,2 +1,4 @@
 # GoldorakGo
-Filipper thème Goldorak
+Flipper thème Goldorak
+
+Créé par Frank Laudun
