@@ -1,0 +1,129 @@
+#config_version=6
+
+lights:
+  l_plunger: # lumière bouton plunger
+    number: 2-0-0
+  l_start: # lumière du bouton start
+    number: 2-0-1
+  l_left_flipper: # lumière du bouton flipper gauche
+    number: 2-0-2
+  l_right_flipper: # lumière du bouton flipper droit
+    number: 2-0-3
+  l_plunger_lane: # présence bille dans couloir éjecteur
+    number: 2-0-4
+  l_left_outline: # insert outline gauche
+    number: 2-0-5
+  l_left_inlane: # insert inline gauche
+    number: 2-0-6
+  l_left_guide1: # lumière guide gauche 1
+    number: 2-0-7
+  l_left_guide2: # lumière guide gauche 2
+    number: 2-0-8
+  l_left_slingshot1: # lumière slingshot gauche 1
+    number: 2-0-9
+  l_left_slingshot2: # lumière slingshot gauche 2
+    number: 2-0-10
+  l_right_outline: # insert outline droit
+    number: 2-0-11
+  l_right_inline: # insert inline droit
+    number: 2-0-12
+  l_right_guide1: # lumière guide droite 1
+    number: 2-0-13
+  l_right_guide2: # lumière guide droite 2
+    number: 2-0-14
+  l_right_slingshot1: # lumière slingshot droite 1
+    number: 2-0-15
+  l_right_slingshot2: # lumière slingshot droite 2
+    number: 2-0-16
+  l_catapult: # insert catapult
+    number: 2-0-17
+  l_shoot_again: # insert shoot again
+    number: 2-0-18
+  l_final_battle: # insert bataille finale
+    number: 2-0-19
+  l_left_target1: # insert cible gauche 1
+    number: 2-0-20
+  l_left_target2: # insert cible gauche 2
+    number: 2-0-21
+  l_right_target1: # insert cible droite 1
+    number: 2-0-22
+  l_right_target2: # insert cible droite 2
+    number: 2-0-23
+  l_hidden_target: # insert cible cachée
+    number: 2-0-24
+  l_left_corn1: # insert corne gauche 1
+    number: 2-0-25
+  l_left_corn2: # insert corne gauche 2
+    number: 2-0-26
+  l_left_corn3: # insert corne gauche 3
+    number: 2-0-27
+  l_right_corn1: # insert corne droite 1
+    number: 2-0-28
+  l_right_corn2: # insert corne droite 2
+    number: 2-0-29
+  l_right_corn3: # insert corne droite 3
+    number: 2-0-30
+  l_top_corn1: # insert corne haute casque 1
+    number: 2-0-31
+  l_top_corn2: # insert corne haute casque 2
+    number: 2-0-32
+  l_left_eye: # insert oeil gauche
+    number: 2-0-33
+  l_right_eye: # insert oeil droit
+    number: 2-0-34
+  l_vega_saucers: # insert bouche gauche - les 3 modes mission soucoupe de vega OK
+    number: 2-0-35
+  l_right_mouth: # insert bouche droit
+    number: 2-0-36
+  l_mission1: # insert mission principale 1
+    number: 2-0-37
+  l_mission2: # insert mission principale 2
+    number: 2-0-38
+  l_mission3: # insert mission principale 3
+    number: 2-0-39
+  l_mission4: # insert mission principale 4
+    number: 2-0-40
+  l_mission5: # insert mission principale 5
+    number: 2-0-41
+  l_mission6: # insert mission principale 6
+    number: 2-0-42
+  l_falling_target: # insert cible tombante
+    number: 2-0-43
+  l_middle_target1: # insert petite cible milieu gauche
+    number: 2-0-44
+  l_middle_target2: # insert petite cible milieu droit
+    number: 2-0-45
+  l_left_high_target: # insert cible haut gauche
+    number: 2-0-46
+  l_right_high_target: # insert cible haut droit, coté cave
+    number: 2-0-47
+  l_right_ramp1a: # insert rampe droite 1 a
+    number: 2-0-48
+  l_right_ramp1b: # insert rampe droite 1 b
+    number: 2-0-49
+  l_right_ramp2a: # insert rampe droite 2 a
+    number: 2-0-50
+  l_right_ramp2b: # insert rampe droite 2 b
+    number: 2-0-51
+  l_cavea: # insert cave a
+    number: 2-0-52
+  l_caveb: # insert cave b
+    number: 2-0-53
+  l_central_ramp: # lumière (flash ?, girophare ?) rampe centrale
+    number: 2-0-54
+  l_left_ramp1a: # insert rampe gauche 1 a
+    number: 2-0-55
+  l_left_ramp1b: # insert rampe gauche 1 b
+    number: 2-0-56
+  l_left_ramp2a: # insert rampe gauche 2 a
+    number: 2-0-57
+  l_left_ramp2b: # insert rampe gauche 2 b
+    number: 2-0-58
+  l_left_orbit1: # insert orbite gauche 1
+    number: 2-0-59
+  l_left_orbit2: # insert orbite gauche 2
+    number: 2-0-60
+  l_left_highline: # insert couloir haut gauche
+    number: 2-0-61
+  l_right_highline: # insert couloir haut droit
+    number: 2-0-62

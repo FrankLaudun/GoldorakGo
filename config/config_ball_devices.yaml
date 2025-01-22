@@ -1,0 +1,19 @@
+#config_version=6
+
+
+ball_devices:
+  bd_plunger: # lanceur
+    ball_switches: s_plunger_lane
+#    mechanical_eject: true
+    entrance_count_delay: 300ms
+    eject_timeouts: 3s
+    eject_coil: c_plunger_eject
+    player_controlled_eject_event: sw launch
+  bd_trough: # magasin billes
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
+    eject_coil: c_trough_eject
+    eject_targets: bd_plunger
+    tags: trough, home, drain
+#    jam_switch: s_trough4
+#    eject_coil_jam_pulse: 15ms
+#    debug: true

@@ -1,0 +1,23 @@
+#config_version=6
+
+mode:
+  start_events: ball_started, vega_saucers_Go, vega_saucers_Resume_Go
+  priority: 300
+variable_player:
+  s_left_bumper_active:
+    score: 10000|block
+  s_down_bumper_active:
+    score: 10000|block
+  s_high_bumper_active:
+    score: 10000|block
+
+#show_player:
+#  mode_super_caps_started:
+#    super_caps_startup:
+#      loops: 0
+#    super_caps_on:
+#      show_tokens:
+#        lights: l_super_caps
+#  mode_super_caps_slides_started:
+#    super_caps_slides:
+#      loops: 0

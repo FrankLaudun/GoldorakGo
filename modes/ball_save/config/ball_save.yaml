@@ -1,0 +1,27 @@
+#config_version=6
+
+mode:
+ start_events: ball_started
+ priority: 1500
+ restart_on_next_ball: true
+
+#show_player:
+# mode_ball_save_started:
+#   ball_save_blink_show:
+#     speed: 5
+#     loops: -1
+# ball_save_ball_save_hurry_up:
+#   ball_save_blink_show:
+#     speed: 15
+#     loops: -1
+# ball_save_ball_save_disabled:
+#   ball_save_blink_show: stop
+
+ball_saves:
+ ball_save:
+   active_time: 10s
+   hurry_up_time: 5s
+   grace_period: 2s
+   timer_start_events: playfield_active
+   auto_launch: true
+   balls_to_save: 1

@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://c14hvxmunl5yf"]
+[gd_scene load_steps=3 format=3 uid="uid://c14hvxmunl5yf"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_q4goy"]
 [ext_resource type="FontFile" uid="uid://df8l81qo7spv4" path="res://fonts/Staccato 555 BT.ttf" id="2_eonv8"]
-[ext_resource type="VideoStream" path="res://videos/goldorakgogenerique.ogv" id="3_hw8ml"]
-[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_apyi8"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3
@@ -18,7 +16,6 @@ color = Color(0.415686, 0.627451, 1, 1)
 
 [node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 0
-offset_left = 709.0
 offset_right = 1605.0
 offset_bottom = 490.0
 theme_override_colors/font_color = Color(0.67451, 0.254902, 0, 1)
@@ -28,13 +25,3 @@ text = "Bienvenue dans le flipper
 GOLDORAK GO"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 47.0
-offset_top = 59.0
-offset_right = 687.0
-offset_bottom = 427.0
-stream = ExtResource("3_hw8ml")
-script = ExtResource("4_apyi8")

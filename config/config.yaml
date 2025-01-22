@@ -7,6 +7,61 @@
 # include everything here, or create sub-config files to be
 # imported and merged with this one.
 
+config:
+  - config_ball_devices.yaml
+  - config_switches.yaml
+  - config_coils.yaml
+  - config_lights.yaml
+
 modes:
   - attract
-  - base
+#  - base
+#  - ball_save
+#  - skill_shot
+#  - vega_saucers
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_trough
+
+spinners:
+  spinny:
+    switch: s_catapult_spinner
+    idle_ms: 1000
+    max_events_per_second: 3
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_flipper_left
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_flipper_right
+
+game:
+  balls_per_game: 3
+  max_players: 4
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough4
+    eject_coil_jam_pulse: 15ms
+    debug: true
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+  bd_plunger:
+    ball_switches: s_trough4
+    mechanical_eject: false
+    eject_timeouts: 5s
+
+virtual_platform_start_active_switches:
+  - s_trough1
+  - s_trough2
+  - s_trough3
+  - s_trough4

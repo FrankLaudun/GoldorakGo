@@ -1,0 +1,59 @@
+#config_version=6
+
+coils:
+  c_flipper_left_main:
+    number: 1-0-0
+    default_pulse_ms: 20
+  c_flipper_left_hold:
+    number: 1-0-1
+    allow_enable: true
+  c_flipper_right_main:
+    number: 1-0-2
+    default_pulse_ms: 20
+  c_flipper_right_hold:
+    number: 1-0-3
+    allow_enable: true
+  c_trough_eject: # éjection magasin billes
+    number: 1-0-4
+  c_plunger_eject: # lanceur
+    number: 1-0-5
+  c_left_slingshot: # slingshot gauche 
+    number: 1-0-6
+  c_right_slingshot: # slingshot droit 
+    number: 1-0-7
+  c_left_bumper: # bumper gauche
+    number: 1-0-8
+  c_down_bumper: # bumper bas
+    number: 1-0-9
+  c_high_bumper: # bumper dhaut
+    number: 1-0-10
+  c_cave: # cave
+    number: 1-0-11
+  c_falling_target: # cible tombante
+    number: 1-0-12
+  c_catapult: # éjection voie de gauche
+    number: 1-0-13
+    default_pulse_ms: 20
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+  left_bumper:
+    coil: c_left_bumper
+    switch: s_left_bumper
+  down_bumper:
+    coil: c_down_bumper
+    switch: s_down_bumper
+  high_bumper:
+    coil: c_high_bumper
+    switch: s_high_bumper
+  cave:
+    coil: c_cave
+    switch: s_cave
+  catapult:
+    coil: c_catapult
+    switch: s_catapult

@@ -1,0 +1,5 @@
+#config_version=6
+
+- time: 0
+lights:
+  l_vega_saucers: ff

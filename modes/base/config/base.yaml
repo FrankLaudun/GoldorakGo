@@ -7,3 +7,30 @@ mode:
   start_events: ball_starting
   stop_events: ball_will_end
   priority: 100
+
+variable_player:
+  mode_base_started:
+	base_start_global:
+	  action: add_machine
+	  int: 1
+
+slide_player:
+  mode_base_started: base
+
+shots:
+  my_first_shot:
+	switch: s_plunger_lane
+	show_tokens:
+	  light: l_plunger_lane,
+	  profile: my_first_profile
+
+shot_profiles:
+  my_first_profile:
+	states:
+	  - name: unlit  # step 1
+		show: off
+	  - name: flashing  # step 2
+		show: flash
+	  - name: lit  # step 3
+		show: on
+	loop: true
