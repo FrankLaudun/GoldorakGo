@@ -30,6 +30,7 @@ offset_left = 2705.0
 offset_top = 625.0
 offset_right = 3182.0
 offset_bottom = 814.0
+theme_override_colors/font_color = Color(0.670588, 0.8, 0.772549, 1)
 theme_override_fonts/font = ExtResource("2_eonv8")
 theme_override_font_sizes/font_size = 120
 text = "sample text"

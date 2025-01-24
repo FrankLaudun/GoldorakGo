@@ -7,7 +7,7 @@
 
 [node name="Base" type="Node2D"]
 
-[node name="basebacground" type="Sprite2D" parent="."]
+[node name="basebackground" type="Sprite2D" parent="."]
 position = Vector2(802.5, 245)
 scale = Vector2(1.00312, 0.98)
 texture = ExtResource("1_ch4uc")

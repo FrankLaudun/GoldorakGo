@@ -7,6 +7,9 @@
 # include everything here, or create sub-config files to be
 # imported and merged with this one.
 
+#hardware:
+#  platform: opp # carte cobrapin
+
 config:
   - config_ball_devices.yaml
   - config_switches.yaml
@@ -25,12 +28,6 @@ playfields:
     default_source_device: bd_trough
     tags: default
 
-spinners:
-  spinny:
-    switch: s_catapult_spinner # spinner sortie couloir de gauche
-    idle_ms: 1000
-    max_events_per_second: 3
-
 flippers:
   left_flipper:
     main_coil: c_flipper_left_main
@@ -41,12 +38,15 @@ flippers:
     hold_coil: c_flipper_right_hold
     activation_switch: s_flipper_right
 
+#machine:
+#  ball_instaled: 4
+
 game:
   balls_per_game: 3
   max_players: 4
 
 ball_devices:
-  bd_trough:
+  bd_trough: # magasin de billes
     ball_switches: s_trough1, s_trough2, s_trough3, s_trough4
     eject_coil: c_trough_eject
     tags: trough, home, drain
@@ -55,10 +55,20 @@ ball_devices:
     debug: true
     eject_targets: bd_plunger
     eject_timeouts: 3s
-  bd_plunger:
-    ball_switches: s_trough4
-    mechanical_eject: false
+  bd_plunger: # lanceur
+    ball_switches: s_plunger
+    eject_coil: c_plunger_eject
+    mechanical_eject: true
     eject_timeouts: 5s
+  bd_catapult:
+    ball_switches: s_catapult
+    eject_coil: c_catapult
+
+spinners:
+  catapult_spinner:
+    switch: s_catapult_spinner # spinner sortie couloir de gauche
+    idle_ms: 1000
+    max_events_per_second: 2
 
 virtual_platform_start_active_switches:
   - s_trough1
