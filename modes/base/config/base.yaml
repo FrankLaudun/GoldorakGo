@@ -10,19 +10,19 @@ mode:
 
 variable_player:
   mode_base_started:
-	base_start_global:
-	  action: add_machine
-	  int: 1
+  base_start_global:
+	action: add_machine
+	int: 1 
 
 slide_player:
   mode_base_started: base
 
 shots:
   my_first_shot:
-	switch: s_plunger_lane
-	show_tokens:
-	  light: l_plunger_lane,
-	  profile: my_first_profile
+	switch: s_plunger
+  show_tokens:
+	light: l_plunger_lane,
+	profile: my_first_profile
 
 shot_profiles:
   my_first_profile:

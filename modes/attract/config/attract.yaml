@@ -19,10 +19,11 @@ mode_settings:
 slide_player:
   mode_attract_started: attract
 
-#sound_player: # musique avec la vidéo sur godot
+#sound_player:
 #  mode_attract_started:
 #    goldorak_generique:
 #      bus: music
+# Annulé car il y a déjà la musique sur la vidéo lancée par godot
 
 timers:
   attract_carousel_timer:
