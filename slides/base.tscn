@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://biqw011mmvmfo"]
+[gd_scene load_steps=3 format=3 uid="uid://d30rpxrhivbkl"]
 
 [ext_resource type="Texture2D" uid="uid://colnv6rr4svow" path="res://slides/basebackground.png" id="1_4ju12"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ueonp"]
 
-[node name="Base" type="Node2D"]
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ueonp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(802.5, 245)

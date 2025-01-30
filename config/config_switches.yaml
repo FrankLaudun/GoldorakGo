@@ -10,17 +10,18 @@ switches:
     tags: right_flipper
   s_plunger:  # lanceur
     number: 1-0-34
+    tags: plunger
   s_start_button: # démarrer
     number: 1-0-35
     tags: start
   # magasin de billes
-  s_trough1: # magasin billes 1
+  s_trough1: # présence bille 1
     number: 1-0-36
-  s_trough2: # magasin billes 2
+  s_trough2: # mprésence bille 2
     number: 1-0-37
-  s_trough3: # magasin billes 3
+  s_trough3: # mprésence bille 3
     number: 1-0-38
-  s_trough4: # magasin billes 4
+  s_trough4: # présence bille 4
     number: 1-0-39
   s_plunger_lane: # présence bille couloir lanceur
     number: 1-0-40
@@ -52,7 +53,7 @@ switches:
     number: 1-0-53
   s_left_ramp2: # rampe haut gauche
     number: 1-0-54
-  s_central_ramp_target: # cibl rampe centrale
+  s_central_ramp_target: # cible rampe centrale
     number: 1-0-55
   s_left_highline: # passage haut gauche
     number: 1-0-56
@@ -64,7 +65,7 @@ switches:
     number: 1-0-59
   s_catapult_spinner: # spinner voie gauche
     number: 1-0-60
-  s_hidden_target: # cible cachée droite, sous rampe spirale
+  s_hidden_target: # cible cachée à droite sous rampe spirale
     number: 1-0-61
   s_left_target1: # cible bas gauche haut
     number: 1-0-62
@@ -92,5 +93,5 @@ switches:
     number: 1-0-73
   s_falling_target: # cible tombante
     number: 1-0-74
-  s_cave: # cave
+  s_cave: # présence bille cave
     number: 1-0-75

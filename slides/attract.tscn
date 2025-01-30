@@ -144,10 +144,10 @@ min_digits = 2
 
 [node name="video generique" type="VideoStreamPlayer" parent="."]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 96.0
-offset_right = 648.0
-offset_bottom = 464.0
+offset_left = -3.0
+offset_top = -69.0
+offset_right = 1607.0
+offset_bottom = 577.0
 stream = ExtResource("3_ch04v")
 autoplay = true
 loop = true

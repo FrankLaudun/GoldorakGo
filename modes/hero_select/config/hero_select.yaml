@@ -26,13 +26,13 @@ variable_player:
     highlighted_hero:
       string: "Venusia"
       action: set
-  hero_select_Alcor_highlighted:
-    highlighted_hero:
-      string: "Alcor"
-      action: set
   hero_select_Phenicia_highlighted:
     highlighted_hero:
       string: "Phenicia"
+      action: set
+  hero_select_Alcor_highlighted:
+    highlighted_hero:
+      string: "Alcor"
       action: set
 
 #sound_player:
