@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://d30rpxrhivbkl"]
+[gd_scene load_steps=6 format=3 uid="uid://d30rpxrhivbkl"]
 
 [ext_resource type="Texture2D" uid="uid://colnv6rr4svow" path="res://slides/basebackground.png" id="1_4ju12"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ueonp"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_nv87u"]
+[ext_resource type="Theme" uid="uid://cn2jfqhw05ghd" path="res://fonts/theme_Staccato555_200px.tres" id="3_x6ui4"]
+[ext_resource type="Theme" uid="uid://c0da4kmmwi3yx" path="res://fonts/theme_Staccato555_100px.tres" id="5_3y75p"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -11,3 +14,45 @@ script = ExtResource("1_ueonp")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(802.5, 245)
 texture = ExtResource("1_4ju12")
+
+[node name="score" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1605.0
+offset_bottom = 313.0
+theme = ExtResource("3_x6ui4")
+text = "1,000,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_nv87u")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 302.0
+offset_right = 1108.0
+offset_bottom = 434.0
+
+[node name="player" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_3y75p")
+text = "Player 1"
+script = ExtResource("3_nv87u")
+variable_name = "number"
+template_string = "Player %s       "
+min_players = 2
+max_players = 4
+
+[node name="ball" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+theme = ExtResource("5_3y75p")
+text = "Ball 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_nv87u")
+variable_name = "ball"
+template_string = "Ball %s"
+min_players = 1
+max_players = 3

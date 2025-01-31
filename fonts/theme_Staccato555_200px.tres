@@ -1,0 +1,7 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cn2jfqhw05ghd"]
+
+[ext_resource type="FontFile" uid="uid://df8l81qo7spv4" path="res://fonts/Staccato 555 BT.ttf" id="1_0tnas"]
+
+[resource]
+default_font = ExtResource("1_0tnas")
+default_font_size = 200
