@@ -19,10 +19,10 @@ config:
 modes:
   - attract
   - base
-#  - hero_select
-#  - ball_save
-#  - skill_shot
-#  - vega_saucers # mission bumpers comme les jets sur AFM et RFM
+  - hero_select
+  - ball_save
+  - skill_shot
+  - vega_saucers # mission bumpers comme les jets sur AFM et RFM
 
 playfields:
   playfield:
