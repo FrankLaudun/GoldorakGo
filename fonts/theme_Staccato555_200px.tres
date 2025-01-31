@@ -5,3 +5,5 @@
 [resource]
 default_font = ExtResource("1_0tnas")
 default_font_size = 200
+Label/colors/font_color = Color(0.952941, 0.956863, 0.0980392, 1)
+Label/constants/line_spacing = 25
