@@ -23,6 +23,7 @@ anchors_preset = 0
 script = ExtResource("3_sixt5")
 
 [node name="actarus" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = -11.0
 offset_top = -4.0
 offset_right = 317.0
@@ -39,6 +40,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_2puty")
 
 [node name="venusia" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 338.0
 offset_top = -22.0
 offset_right = 666.0
@@ -55,6 +57,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("6_6kaqr")
 
 [node name="phenicia" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 868.0
 offset_top = 11.0
 offset_right = 1196.0
@@ -71,6 +74,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_mfdvq")
 
 [node name="alcor" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 1273.0
 offset_top = -18.0
 offset_right = 1601.0

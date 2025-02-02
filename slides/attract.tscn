@@ -27,6 +27,7 @@ script = ExtResource("2_cqrtb")
 carousel_name = "attract"
 
 [node name="credits" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 2705.0
 offset_top = 625.0
 offset_right = 3182.0

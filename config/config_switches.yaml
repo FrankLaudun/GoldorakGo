@@ -25,6 +25,7 @@ switches:
     number: 1-0-39
   s_plunger_lane: # présence bille couloir lanceur
     number: 1-0-40
+    tags: playfiels_active
   s_left_slingshot: # slingshot gauche
     number: 1-0-41
   s_right_slingshot: # slingshot droit
