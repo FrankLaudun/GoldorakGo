@@ -42,13 +42,13 @@ theme = ExtResource("5_3y75p")
 text = "Player 1"
 script = ExtResource("3_nv87u")
 variable_name = "number"
-template_string = "Player %s       "
+template_string = "Player %s   "
 min_players = 2
 max_players = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="HBoxContainer"]
-position = Vector2(512, 93)
-scale = Vector2(0.856884, 0.856884)
+position = Vector2(514, 99)
+scale = Vector2(0.419535, 0.419535)
 texture = ExtResource("6_2t6bk")
 
 [node name="ball" type="Label" parent="HBoxContainer"]

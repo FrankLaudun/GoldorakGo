@@ -18,7 +18,8 @@ script = ExtResource("1_fx52m")
 position = Vector2(802.5, 245)
 texture = ExtResource("2_ni1xv")
 
-[node name="MPFCarousel" type="Node2D" parent="."]
+[node name="MPFCarousel" type="Control" parent="."]
+anchors_preset = 0
 script = ExtResource("3_sixt5")
 
 [node name="actarus" type="Label" parent="MPFCarousel"]

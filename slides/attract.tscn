@@ -20,7 +20,8 @@ script = ExtResource("1_q4goy")
 position = Vector2(800, 250)
 texture = ExtResource("2_ecey2")
 
-[node name="MPFCarousel" type="Node2D" parent="."]
+[node name="MPFCarousel" type="Control" parent="."]
+anchors_preset = 0
 scale = Vector2(0.4, 0.4)
 script = ExtResource("2_cqrtb")
 carousel_name = "attract"
