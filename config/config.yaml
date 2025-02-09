@@ -23,6 +23,7 @@ modes:
   - ball_save
   - skill_shot
   - vega_saucers # mission bumpers comme les jets sur AFM et RFM
+  - multiballes_rampes
 
 playfields:
   playfield:
@@ -40,16 +41,21 @@ flippers:
     activation_switch: s_flipper_right
 
 displays:
-  widht: 1605
+  width: 1605
   height: 490
 
 #machine:
-#  ball_instaled: 4
+#  balls_instaled: 4
 
 game:
   balls_per_game: 3
   max_players: 4
   add_player_switch_tag: add_player
+
+switches:
+  start_button:
+    number: s_start
+    tags: add_player  # Associe le bouton Start à l'ajout de joueurs
 
 ball_devices:
   bd_trough: # magasin de billes

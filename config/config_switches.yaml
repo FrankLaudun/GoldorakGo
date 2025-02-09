@@ -13,7 +13,7 @@ switches:
     tags: plunger
   s_start_button: # démarrer
     number: 1-0-35
-    tags: start
+    tags: start, add_player
   # magasin de billes
   s_trough1: # présence bille 1
     number: 1-0-36
@@ -26,10 +26,12 @@ switches:
   s_plunger_lane: # présence bille couloir lanceur
     number: 1-0-40
     tags: playfiels_active
+# slingshot
   s_left_slingshot: # slingshot gauche
     number: 1-0-41
   s_right_slingshot: # slingshot droit
     number: 1-0-42
+# bumper
   s_left_bumper: # bumper gauche
     number: 1-0-43
   s_down_bumper: # bumper bas
@@ -46,14 +48,19 @@ switches:
     number: 1-0-49
   s_right_inlane: # vers flipper gauche
     number: 1-0-50
+# rampes
   s_right_ramp1: # rampe bas droite
     number: 1-0-51
+    type: NC
   s_right_ramp2: # rampe haut droite
     number: 1-0-52
+    type: NC
   s_left_ramp1: # rampe haut gauche
     number: 1-0-53
+    type: NC
   s_left_ramp2: # rampe haut gauche
     number: 1-0-54
+    type: NC
   s_central_ramp_target: # cible rampe centrale
     number: 1-0-55
   s_left_highline: # passage haut gauche

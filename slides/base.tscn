@@ -29,14 +29,14 @@ variable_name = "score"
 comma_separate = true
 min_digits = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer_player1" type="HBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 572.0
 offset_top = 273.0
 offset_right = 1213.0
 offset_bottom = 456.0
 
-[node name="player" type="Label" parent="HBoxContainer"]
+[node name="player1" type="Label" parent="HBoxContainer_player1"]
 layout_mode = 2
 theme = ExtResource("5_3y75p")
 text = "Player 1"
@@ -46,12 +46,12 @@ template_string = "Player %s   "
 min_players = 2
 max_players = 4
 
-[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer"]
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer_player1"]
 position = Vector2(514, 99)
 scale = Vector2(0.419535, 0.419535)
 texture = ExtResource("6_2t6bk")
 
-[node name="ball" type="Label" parent="HBoxContainer"]
+[node name="ball" type="Label" parent="HBoxContainer_player1"]
 layout_mode = 2
 theme = ExtResource("5_3y75p")
 text = "Ball 1"

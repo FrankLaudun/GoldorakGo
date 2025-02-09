@@ -1,0 +1,51 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  stop_events: multiball_rampes_end
+  priority: 100
+
+multiballs:
+  rampes_multiball:
+    ball_count: 3
+    shoot_again: 10s
+    start_events: multiball_rampes_start
+    stop_events: multiball_rampes_end
+
+counters:
+  ramp_hits:
+    count_events: [s_right_ramp1_active, s_right_ramp2_active, s_left_ramp1_active, s_left_ramp2_active]
+    count_complete_value: 2
+    reset_on_complete: true
+    events_when_complete: multiball_rampes_start
+
+  jackpot_1_counter:
+    count_events: [s_right_ramp1_active, s_right_ramp2_active]
+    count_complete_value: 2
+    reset_on_complete: true
+    events_when_complete: jackpot_1_awarded
+
+  jackpot_2_counter:
+    count_events: [s_left_ramp1_active, s_left_ramp2_active]
+    count_complete_value: 2
+    reset_on_complete: true
+    events_when_complete: jackpot_2_awarded
+
+  jackpot_3_counter:
+    count_events: [s_right_ramp1_active, s_right_ramp2_active, s_left_ramp1_active, s_left_ramp2_active]
+    count_complete_value: 4
+    reset_on_complete: true
+    events_when_complete: jackpot_3_awarded
+
+event_player:
+  jackpot_1_awarded:
+    score:
+      value: 100000
+
+  jackpot_2_awarded:
+    score:
+      value: 250000
+
+  jackpot_3_awarded:
+    score:
+      value: 500000

@@ -71,6 +71,6 @@ state_machines:
       - source: start
         target: success
         events: skill_shot_flashing_hit
-      - source:
+      - source: start
         target: failed
         events: skill_shot_unlit_hit, timer_skill_shot_timeout_complete

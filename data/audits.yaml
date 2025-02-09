@@ -1,51 +1,52 @@
 events:
   game_ended: 0
-  game_started: 2
+  game_started: 14
 missing_switches:
-  s_catapult: 2
-  s_catapult_spinner: 2
-  s_cave: 2
-  s_central_ramp_target: 2
-  s_central_target1: 2
-  s_central_target2: 2
-  s_central_target3: 2
-  s_central_target4: 2
-  s_down_bumper: 2
-  s_falling_target: 2
-  s_flipper_left: 2
-  s_flipper_right: 2
-  s_hidden_target: 2
-  s_high_bumper: 2
-  s_left_bumper: 2
-  s_left_door: 2
-  s_left_high_target: 2
-  s_left_highline: 2
-  s_left_inlane: 2
-  s_left_outlane: 2
-  s_left_ramp1: 2
-  s_left_ramp2: 2
-  s_left_slingshot: 2
-  s_left_target1: 2
-  s_left_target2: 2
-  s_middle_target1: 2
-  s_middle_target2: 2
-  s_plunger: 2
-  s_plunger_lane: 2
-  s_right_door: 2
-  s_right_high_target: 2
-  s_right_highline: 2
-  s_right_inlane: 2
-  s_right_outlane: 2
-  s_right_ramp1: 2
-  s_right_ramp2: 2
-  s_right_slingshot: 2
-  s_right_target1: 2
-  s_right_target2: 2
-  s_start_button: 1
-  s_trough1: 2
-  s_trough2: 2
-  s_trough3: 2
-  s_trough4: 2
+  s_catapult: 14
+  s_catapult_spinner: 14
+  s_cave: 14
+  s_central_ramp_target: 14
+  s_central_target1: 14
+  s_central_target2: 14
+  s_central_target3: 14
+  s_central_target4: 14
+  s_down_bumper: 14
+  s_falling_target: 14
+  s_flipper_left: 14
+  s_flipper_right: 14
+  s_hidden_target: 14
+  s_high_bumper: 14
+  s_left_bumper: 14
+  s_left_door: 14
+  s_left_high_target: 14
+  s_left_highline: 14
+  s_left_inlane: 14
+  s_left_outlane: 14
+  s_left_ramp1: 14
+  s_left_ramp2: 14
+  s_left_slingshot: 14
+  s_left_target1: 14
+  s_left_target2: 14
+  s_middle_target1: 14
+  s_middle_target2: 14
+  s_plunger: 14
+  s_plunger_lane: 14
+  s_right_door: 14
+  s_right_high_target: 14
+  s_right_highline: 14
+  s_right_inlane: 14
+  s_right_outlane: 14
+  s_right_ramp1: 14
+  s_right_ramp2: 14
+  s_right_slingshot: 14
+  s_right_target1: 14
+  s_right_target2: 14
+  s_start_button: 5
+  s_trough1: 14
+  s_trough2: 14
+  s_trough3: 14
+  s_trough4: 14
+  start_button: 8
 player:
   score:
     average: 0
@@ -91,8 +92,9 @@ switches:
   s_right_slingshot: 0
   s_right_target1: 0
   s_right_target2: 0
-  s_start_button: 3
+  s_start_button: 21
   s_trough1: 0
   s_trough2: 0
   s_trough3: 0
   s_trough4: 0
+  start_button: 0
