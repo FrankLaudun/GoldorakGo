@@ -44,8 +44,8 @@ displays:
   width: 1605
   height: 490
 
-#machine:
-#  balls_instaled: 4
+machine:
+  balls_installed: 4
 
 game:
   balls_per_game: 3

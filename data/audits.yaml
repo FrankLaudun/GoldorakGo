@@ -1,52 +1,53 @@
 events:
   game_ended: 0
-  game_started: 14
+  game_started: 37
 missing_switches:
-  s_catapult: 14
-  s_catapult_spinner: 14
-  s_cave: 14
-  s_central_ramp_target: 14
-  s_central_target1: 14
-  s_central_target2: 14
-  s_central_target3: 14
-  s_central_target4: 14
-  s_down_bumper: 14
-  s_falling_target: 14
-  s_flipper_left: 14
-  s_flipper_right: 14
-  s_hidden_target: 14
-  s_high_bumper: 14
-  s_left_bumper: 14
-  s_left_door: 14
-  s_left_high_target: 14
-  s_left_highline: 14
-  s_left_inlane: 14
-  s_left_outlane: 14
-  s_left_ramp1: 14
-  s_left_ramp2: 14
-  s_left_slingshot: 14
-  s_left_target1: 14
-  s_left_target2: 14
-  s_middle_target1: 14
-  s_middle_target2: 14
-  s_plunger: 14
-  s_plunger_lane: 14
-  s_right_door: 14
-  s_right_high_target: 14
-  s_right_highline: 14
-  s_right_inlane: 14
-  s_right_outlane: 14
-  s_right_ramp1: 14
-  s_right_ramp2: 14
-  s_right_slingshot: 14
-  s_right_target1: 14
-  s_right_target2: 14
-  s_start_button: 5
-  s_trough1: 14
-  s_trough2: 14
-  s_trough3: 14
-  s_trough4: 14
-  start_button: 8
+  s_catapult: 37
+  s_catapult_spinner: 37
+  s_cave: 37
+  s_central_ramp_target: 37
+  s_central_target1: 37
+  s_central_target2: 37
+  s_central_target3: 37
+  s_central_target4: 37
+  s_down_bumper: 37
+  s_falling_target: 37
+  s_fire_button: 6
+  s_flipper_left: 2
+  s_flipper_right: 2
+  s_hidden_target: 37
+  s_high_bumper: 37
+  s_left_bumper: 37
+  s_left_door: 37
+  s_left_high_target: 37
+  s_left_highline: 37
+  s_left_inlane: 37
+  s_left_outlane: 37
+  s_left_ramp1: 37
+  s_left_ramp2: 37
+  s_left_slingshot: 37
+  s_left_target1: 37
+  s_left_target2: 37
+  s_middle_target1: 37
+  s_middle_target2: 37
+  s_plunger: 37
+  s_plunger_lane: 37
+  s_right_door: 37
+  s_right_high_target: 37
+  s_right_highline: 37
+  s_right_inlane: 37
+  s_right_outlane: 37
+  s_right_ramp1: 37
+  s_right_ramp2: 37
+  s_right_slingshot: 37
+  s_right_target1: 37
+  s_right_target2: 37
+  s_start_button: 1
+  s_trough1: 37
+  s_trough2: 37
+  s_trough3: 37
+  s_trough4: 37
+  start_button: 31
 player:
   score:
     average: 0
@@ -63,8 +64,9 @@ switches:
   s_central_target4: 0
   s_down_bumper: 0
   s_falling_target: 0
-  s_flipper_left: 0
-  s_flipper_right: 0
+  s_fire_button: 0
+  s_flipper_left: 18
+  s_flipper_right: 12
   s_hidden_target: 0
   s_high_bumper: 0
   s_left_bumper: 0
@@ -92,7 +94,7 @@ switches:
   s_right_slingshot: 0
   s_right_target1: 0
   s_right_target2: 0
-  s_start_button: 21
+  s_start_button: 79
   s_trough1: 0
   s_trough2: 0
   s_trough3: 0

@@ -103,3 +103,5 @@ switches:
     number: 1-0-74
   s_cave: # présence bille cave
     number: 1-0-75
+  s_fire_button:
+    number: 1-0-76
