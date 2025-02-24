@@ -2,7 +2,7 @@
 
 mode:
   start_events: start_hero_select_mode, show_hero_select_mode
-  stop_events: hero_select_itme_selected
+  stop_events: hero_select_item_selected
   game_mode: false
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 120
@@ -14,31 +14,26 @@ mode_settings:
     - Alcor
     - Phenicia
   select_item_events: s_fire_button_active
-  next_item_events: s_right_flipper_active
-  previous_item_events: s_left_flipper_active
+  next_item_events: s_flipper_right_active
+  previous_item_events: s_flipper_left_active
 
 variable_player:
   hero_select_Actarus_highlighted:
     highlighted_hero:
       string: "Actarus"
-      action: set
   hero_select_Venusia_highlighted:
     highlighted_hero:
       string: "Venusia"
-      action: set
   hero_select_Phenicia_highlighted:
     highlighted_hero:
       string: "Phenicia"
-      action: set
   hero_select_Alcor_highlighted:
     highlighted_hero:
       string: "Alcor"
-      action: set
 
 event_player:
   s_fire_button_active: hero_selected
-  hero_selected: game_start
+  hero_selected: base_start
 
 slide_player:
   mode_hero_select_started: hero_select
-  

@@ -1,0 +1,43 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  stop_events: ball_end
+  priority: 150
+
+timers:
+  center_post_multiballes_rampes_timer:
+    start_events: multiballes_rampes_start
+    end_action: disable_center_post
+    duration: 15s
+  center_post_random_timer:
+    start_events: random_center_post_event
+    end_action: disable_center_post
+    duration: 10s
+  center_post_mission_finale_timer:
+    start_events: mission_finale_start
+    end_action: disable_center_post
+    duration: 60s
+
+events:
+  enable_center_post:
+    actions:
+      - coil_pulse: c_center_post
+  disable_center_post:
+    actions:
+      - coil.disable: c_center_post
+  random_center_post_event:
+    random_chance: 1/250
+
+logic_blocks:
+  random_post_trigger:
+    type: timer
+    timer: random_center_post_event_timer
+    envents_when_complete: random_center_post_event
+    start_condition: ball started
+    restart_on_complete: true
+    interval: 30s
+
+variable_player:
+ center_post_success:
+    score: 10000

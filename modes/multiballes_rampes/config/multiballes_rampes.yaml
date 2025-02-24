@@ -6,18 +6,18 @@ mode:
   priority: 100
 
 multiballs:
-  rampes_multiball:
+  multiballes_rampes:
     ball_count: 3
     shoot_again: 10s
-    start_events: multiball_rampes_start
-    stop_events: multiball_rampes_end
+    start_events: multiballes_rampes_start
+    stop_events: multiballes_rampes_end
 
 counters:
   ramp_hits:
     count_events: [s_right_ramp1_active, s_right_ramp2_active, s_left_ramp1_active, s_left_ramp2_active]
     count_complete_value: 2
     reset_on_complete: true
-    events_when_complete: multiball_rampes_start
+    events_when_complete: multiballes_rampes_start
 
   jackpot_1_counter:
     count_events: [s_right_ramp1_active, s_right_ramp2_active]

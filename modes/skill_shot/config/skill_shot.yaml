@@ -28,9 +28,11 @@ shots:
     profile: skill_shot_profile
     show_tokens:
       light: l_left_ramp2a
+
 shot_groups:
   skill_shot:
     shots: skill_1, skill_2, skill_3, skill_4
+
 shot_profiles:
   skill_shot_profile:
     states:
@@ -44,9 +46,11 @@ shot_profiles:
      - name: lit
        show: on
     loop: true
+
 variable_player:
   skill_success:
     score: 10000
+
 timers:
   skill_shot_timeout:
     start_value: 0
@@ -55,6 +59,7 @@ timers:
     control_events:
       - action: start
         event: ball_device_plunger_lane_ball_eject_success
+
 state_machines:
   skill_shot_success:
     debug: true

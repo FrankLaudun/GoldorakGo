@@ -34,6 +34,8 @@ coils:
   c_catapult: # éjection voie de gauche
     number: 1-0-13
     default_pulse_ms: 20
+  c_center_post: # tige sortant entre les batteurs
+    number: 1-0-14
 
 autofire_coils:
   left_slingshot:
