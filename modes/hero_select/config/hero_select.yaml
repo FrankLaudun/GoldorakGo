@@ -13,7 +13,7 @@ mode_settings:
     - Venusia
     - Alcor
     - Phenicia
-  select_item_events: s_action_active
+  select_item_events: s_fire_button_active
   next_item_events: s_right_flipper_active
   previous_item_events: s_left_flipper_active
 
@@ -35,8 +35,10 @@ variable_player:
       string: "Alcor"
       action: set
 
-#sound_player:
-#  mode_attract_started:
-#    ???: # mettre la musique choisie
-#      bus: music
+event_player:
+  s_fire_button_active: hero_selected
+  hero_selected: game_start
+
+slide_player:
+  mode_hero_select_started: hero_select
   

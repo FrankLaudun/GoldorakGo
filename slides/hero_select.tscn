@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b65td4jilumn4"]
+[gd_scene load_steps=11 format=3 uid="uid://b65td4jilumn4"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_fx52m"]
 [ext_resource type="Texture2D" uid="uid://c82sva5ko1dqn" path="res://slides/hero_select_background.png" id="2_ni1xv"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://cum4byxg270sn" path="res://slides/hero_select_phenicia.png" id="5_mfdvq"]
 [ext_resource type="Texture2D" uid="uid://4n21dphq3nd8" path="res://slides/hero_select_venusia.png" id="6_6kaqr"]
 [ext_resource type="Texture2D" uid="uid://coe8l7yqyeflr" path="res://slides/hero_select_alcor.png" id="8_r8xxw"]
+[ext_resource type="VideoStream" path="res://videos/goldorakgogeneriquejaponais.ogv" id="9_1wi3h"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="10_a5tcr"]
 
 [node name="HeroSelect" type="Control"]
 layout_mode = 3
@@ -21,13 +23,14 @@ texture = ExtResource("2_ni1xv")
 [node name="MPFCarousel" type="Control" parent="."]
 anchors_preset = 0
 script = ExtResource("3_sixt5")
+carousel_name = "hero_select"
 
 [node name="actarus" type="Label" parent="MPFCarousel"]
 layout_mode = 0
-offset_left = -11.0
+offset_left = 13.0
 offset_top = -4.0
-offset_right = 317.0
-offset_bottom = 482.0
+offset_right = 295.0
+offset_bottom = 470.0
 script = ExtResource("4_o0mwt")
 variable_type = 2
 variable_name = "actarus"
@@ -35,15 +38,15 @@ comma_separate = true
 min_digits = 2
 
 [node name="actarus" type="Sprite2D" parent="MPFCarousel/actarus"]
-position = Vector2(158, 247)
+position = Vector2(140, 242)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("5_2puty")
 
 [node name="venusia" type="Label" parent="MPFCarousel"]
 layout_mode = 0
-offset_left = 338.0
-offset_top = -22.0
-offset_right = 666.0
+offset_left = 315.0
+offset_top = 20.0
+offset_right = 587.0
 offset_bottom = 464.0
 script = ExtResource("4_o0mwt")
 variable_type = 2
@@ -52,16 +55,16 @@ comma_separate = true
 min_digits = 2
 
 [node name="venusia" type="Sprite2D" parent="MPFCarousel/venusia"]
-position = Vector2(156, 276)
+position = Vector2(133, 226)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("6_6kaqr")
 
 [node name="phenicia" type="Label" parent="MPFCarousel"]
 layout_mode = 0
-offset_left = 868.0
+offset_left = 1012.0
 offset_top = 11.0
-offset_right = 1196.0
-offset_bottom = 497.0
+offset_right = 1304.0
+offset_bottom = 447.0
 script = ExtResource("4_o0mwt")
 variable_type = 2
 variable_name = "phenicia"
@@ -75,10 +78,10 @@ texture = ExtResource("5_mfdvq")
 
 [node name="alcor" type="Label" parent="MPFCarousel"]
 layout_mode = 0
-offset_left = 1273.0
-offset_top = -18.0
-offset_right = 1601.0
-offset_bottom = 468.0
+offset_left = 1298.0
+offset_top = 37.0
+offset_right = 1597.0
+offset_bottom = 484.0
 script = ExtResource("4_o0mwt")
 variable_type = 2
 variable_name = "alcor"
@@ -86,6 +89,15 @@ comma_separate = true
 min_digits = 2
 
 [node name="alcor" type="Sprite2D" parent="MPFCarousel/alcor"]
-position = Vector2(160, 280)
+position = Vector2(159, 222)
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("8_r8xxw")
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_left = 460.0
+offset_top = 7.0
+offset_right = 1100.0
+offset_bottom = 487.0
+stream = ExtResource("9_1wi3h")
+script = ExtResource("10_a5tcr")

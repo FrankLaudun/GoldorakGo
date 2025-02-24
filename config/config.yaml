@@ -54,7 +54,7 @@ game:
 
 switches:
   start_button:
-    number: s_start
+    number: s_start_button
     tags: add_player  # Associe le bouton Start à l'ajout de joueurs
 
 ball_devices:
