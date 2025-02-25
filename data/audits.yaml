@@ -1,52 +1,51 @@
 events:
   game_ended: 0
-  game_started: 49
+  game_started: 72
 missing_switches:
-  s_catapult: 49
-  s_catapult_spinner: 49
-  s_cave: 49
-  s_central_ramp_target: 49
-  s_central_target1: 49
-  s_central_target2: 49
-  s_central_target3: 49
-  s_central_target4: 49
-  s_down_bumper: 49
-  s_falling_target: 49
-  s_fire_button: 18
-  s_flipper_left: 14
-  s_flipper_right: 1
-  s_hidden_target: 49
-  s_high_bumper: 49
-  s_left_bumper: 49
-  s_left_door: 49
-  s_left_high_target: 49
-  s_left_highline: 49
-  s_left_inlane: 49
-  s_left_outlane: 49
-  s_left_ramp1: 49
-  s_left_ramp2: 49
-  s_left_slingshot: 49
-  s_left_target1: 49
-  s_left_target2: 49
-  s_middle_target1: 49
-  s_middle_target2: 49
-  s_plunger: 49
-  s_plunger_lane: 49
-  s_right_door: 49
-  s_right_high_target: 49
-  s_right_highline: 49
-  s_right_inlane: 49
-  s_right_outlane: 49
-  s_right_ramp1: 49
-  s_right_ramp2: 49
-  s_right_slingshot: 49
-  s_right_target1: 49
-  s_right_target2: 49
-  s_trough1: 49
-  s_trough2: 49
-  s_trough3: 49
-  s_trough4: 49
-  start_button: 43
+  s_catapult: 72
+  s_catapult_spinner: 72
+  s_cave: 72
+  s_central_ramp_target: 72
+  s_central_target1: 72
+  s_central_target2: 72
+  s_central_target3: 72
+  s_central_target4: 72
+  s_down_bumper: 72
+  s_falling_target: 72
+  s_fire_button: 41
+  s_flipper_right: 13
+  s_hidden_target: 72
+  s_high_bumper: 72
+  s_left_bumper: 72
+  s_left_door: 72
+  s_left_high_target: 72
+  s_left_highline: 72
+  s_left_inlane: 72
+  s_left_outlane: 72
+  s_left_ramp1: 72
+  s_left_ramp2: 72
+  s_left_slingshot: 72
+  s_left_target1: 72
+  s_left_target2: 72
+  s_middle_target1: 72
+  s_middle_target2: 72
+  s_plunger: 72
+  s_plunger_lane: 72
+  s_right_door: 72
+  s_right_high_target: 72
+  s_right_highline: 72
+  s_right_inlane: 72
+  s_right_outlane: 72
+  s_right_ramp1: 72
+  s_right_ramp2: 72
+  s_right_slingshot: 72
+  s_right_target1: 72
+  s_right_target2: 72
+  s_trough1: 72
+  s_trough2: 72
+  s_trough3: 72
+  s_trough4: 72
+  start_button: 66
 player:
   score:
     average: 0
@@ -64,8 +63,8 @@ switches:
   s_down_bumper: 0
   s_falling_target: 0
   s_fire_button: 0
-  s_flipper_left: 18
-  s_flipper_right: 16
+  s_flipper_left: 81
+  s_flipper_right: 43
   s_hidden_target: 0
   s_high_bumper: 0
   s_left_bumper: 0
@@ -93,7 +92,7 @@ switches:
   s_right_slingshot: 0
   s_right_target1: 0
   s_right_target2: 0
-  s_start_button: 95
+  s_start_button: 145
   s_trough1: 0
   s_trough2: 0
   s_trough3: 0

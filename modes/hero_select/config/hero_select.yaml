@@ -12,9 +12,12 @@ mode_settings:
     - Venusia
     - Alcor
     - Phenicia
-  select_item_events: s_fire_button_active
   next_item_events: s_flipper_right_active
   previous_item_events: s_flipper_left_active
+  select_item_events: s_fire_button_active
+
+slide_player:
+  mode_hero_select_started: hero_select
 
 variable_player:
   hero_select_Actarus_highlighted:
@@ -37,6 +40,3 @@ variable_player:
 event_player:
   s_fire_button_active: hero_selected
   hero_selected: base_start
-
-slide_player:
-  mode_hero_select_started: hero_select
