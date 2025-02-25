@@ -4,7 +4,7 @@
 # and stops at the end of each ball.
 
 mode:
-  start_events: ball_starting
+  start_events: base_start
   stop_events: ball_will_end
   priority: 100
 

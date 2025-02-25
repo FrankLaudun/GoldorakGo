@@ -20,11 +20,11 @@ modes:
   - attract
   - base
   - hero_select
-  - center_post
-  - ball_save
-  - skill_shot
-  - vega_saucers # mission bumpers comme les jets sur AFM et RFM
-  - multiballes_rampes
+#  - center_post
+#  - ball_save
+#  - skill_shot
+#  - vega_saucers # mission bumpers comme les jets sur AFM et RFM
+#  - multiballes_rampes
 
 playfields:
   playfield:
@@ -89,4 +89,5 @@ virtual_platform_start_active_switches:
   - s_trough4
 
 event_player:
+  s_start_button_active: game_start
   game_start: start_hero_select_mode

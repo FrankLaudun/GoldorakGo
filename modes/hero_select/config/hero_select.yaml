@@ -3,7 +3,6 @@
 mode:
   start_events: start_hero_select_mode, show_hero_select_mode
   stop_events: hero_select_item_selected
-  game_mode: false
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 120
 
@@ -21,15 +20,19 @@ variable_player:
   hero_select_Actarus_highlighted:
     highlighted_hero:
       string: "Actarus"
+      action: set
   hero_select_Venusia_highlighted:
     highlighted_hero:
       string: "Venusia"
+      action: set
   hero_select_Phenicia_highlighted:
     highlighted_hero:
       string: "Phenicia"
+      action: set
   hero_select_Alcor_highlighted:
     highlighted_hero:
       string: "Alcor"
+      action: set
 
 event_player:
   s_fire_button_active: hero_selected
